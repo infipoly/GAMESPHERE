@@ -1,0 +1,250 @@
+:root{
+    --primary-color:#e21818;
+    --body-color:#1c1c1c;
+}
+*{
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+body{
+    background-color: var(--body-color);
+    color: white;
+    overflow-x:hidden;
+}
+
+.navbar-gaming, .navbar-gaming.navbar, nav.navbar-gaming {
+    background-color: var(--primary-color) !important;
+    
+}
+.nav-link, .active{
+    color:white !important;
+    font-size: 1.6em;
+    padding-left:25px !important;
+    font-weight: 600;
+}
+.nav-item{
+    padding: 9px 22px;
+    gap:10px;
+}
+.navbar-brand{
+    margin-left: 36px;
+}
+.navbar-toggler-icon{
+    width: 2.5em;
+    height: 2.5em;
+    background-image: url('https://icon-library.com/images/white-hamburger-menu-icon/white-hamburger-menu-icon-24.jpg') !important;
+}
+.hero{
+    height:800px;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('https://images.pexels.com/photos/7862633/pexels-photo-7862633.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1200');
+    width:100%;
+
+}
+.hero .card{
+    width:700px;
+    margin:100px;
+    flex:1;
+}
+
+
+.primary-button{
+    padding: 10px 23px;
+    background: var(--primary-color);
+    color: white;
+    background-size: cover;
+    font-weight: 500;
+    border-radius: 10px;
+    border: 0px;
+    margin: 9px;
+    font-size: 23px;
+    transition:all 0.3s ease-in-out;
+
+    text-decoration: none !important;
+}
+
+
+.phone-card{
+    color:white;
+    display:flex;
+}
+.primary-button:hover{
+    background-color: transparent;
+    border:red 3px solid;
+    color:black;
+    animation: boucing-up-down 1s infinite;
+      text-decoration: none !important;
+}
+.phone-card{
+    display:none !important;
+}
+@media (max-width: 1264px) {
+    .phone-card{
+        display:flex !important;
+    }
+    .hero{
+        width:150%;
+    }
+    .topper-navbar{
+        width:200%;
+    }
+   .topper-navbar{
+        width:200%;
+    }
+    .navbar-gaming{
+        width:200%;
+    }
+    .hero .card{
+        display:none !important;
+    }
+}
+
+@keyframes boucing-up-down {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+@media (max-width: 800px) {
+ .hero .primary-button:hover{
+    color:white;
+}
+.hero{
+    background-color:#1c1c1c;
+    height:500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+}
+   .table>:not(caption)>*>* {
+    background-color: black;
+    color:white;
+    
+
+}
+.table-container{
+    background-color: black;
+}
+th{
+    font-size:1.7em;
+    font-weight:500;
+}
+td{
+    font-size:1.5em;
+    font-weight:200;
+}
+
+h1{
+    font-weight:700
+}
+table hr{
+    opacity:1; border:2px red solid; width:80%; margin-left:110px;
+}
+@media (max-width: 1400px){
+    table hr{
+        margin:0;
+
+        width:100%;
+    }
+}
+.top-players .card{
+    height: 426px;
+    width:368px !important;
+}
+.top-players .card h2{
+    color:red;
+    font-weight:700
+}
+.topper-navbar{
+    height:65px;
+    background-color: #fff;
+    color:black;
+   display:block;
+}
+.topper-navbar .row{
+    padding: 15px;
+}
+.topper-navbar .row{
+    margin-left:219px;
+}
+.topper-navbar-phone{
+    display:none;
+    background-color: #fff;
+}
+.topper-navbar-phone .row{
+    padding: 15px;
+    display:flex;
+    justify-content: space-between;
+    color:black;
+}
+@media (max-width: 1488px){
+    .topper-navbar .row{
+       margin:0;
+    }
+}
+@media (max-width:1278px){
+    .topper-navbar{
+        display:none;
+    }
+    .topper-navbar-phone{
+        display:flex;
+        width:200%;
+    }
+}
+
+.events-comming{
+    display: inline-flex;
+    flex-wrap: wrap;
+    
+    gap: 10px;
+    
+}
+.events-comming .card{
+    width: 32rem;
+    height: 40rem !important;
+    background-color: #1c1c1c;
+    border: none;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+.Register{
+    width:60%;
+}
+.Register:hover{
+    color:white;
+}
+.events-comming img{
+    height:341px;
+}
+
+
+.footer{
+    background-color: var(--primary-color);
+    width:100%;
+}
+.footer .content .row .col img{
+    width:100px;
+    height:auto;
+}
+.phone-footer{
+    display:none !important;
+}
+@media (max-width: 1102px){
+    .phone-footer{
+        display:flex !important;
+    }
+    .normal-footer{
+        display: none !important;
+    }
+}
